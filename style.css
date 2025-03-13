@@ -23,17 +23,25 @@ body {
 
     
 
-   @media (max-width: 768px) { /* Dla ekranów mniejszych niż 768px (np. telefon) */
-.box2 {
-        margin-top: 20px; /* Dodaje odstęp od góry na telefonach */
-        width: 90%; /* Sprawia, że box dostosuje szerokość do ekranu */
-        background: #ffdaf7;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(11, 12, 92, 0.5); 
-        width: 1000px;
-        text-align: left;
-        padding-top: 50px;
+  .box2 {
+    background: #ffdaf7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(11, 12, 92, 0.5); 
+    width: 1000px;
+    text-align: left;
+    padding-top: 50px;
+    margin-top: 50px; /* Odstęp od góry na dużych ekranach */
+}
+
+/* Styl dla telefonów (ekranów mniejszych niż 768px) */
+@media (max-width: 768px) {
+    .box2 {
+        margin-top: 20px; /* Mniejszy odstęp na telefonach */
+        width: 90%; /* Dostosowanie szerokości */
+    }
+}
+
     
     
 }
