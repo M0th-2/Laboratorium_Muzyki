@@ -5,11 +5,12 @@
 }
 body {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    justify-content: center; /* Nadal wyśrodkowuje box poziomo */
+    align-items: flex-start; /* Ustawia box na górze ekranu */
+    min-height: 100vh; /* Zapewnia, że strona nie będzie za krótka */
     background-color: #2c1981;
-    font-family: Univers , sans-serif; 
+    font-family: Univers, sans-serif;
+}
 }
 .box {
     background: #ffdaf7;
