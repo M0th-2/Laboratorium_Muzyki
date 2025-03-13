@@ -23,7 +23,7 @@ body {
 
     
 
-  .box2 {
+ .box2 {
     background: #ffdaf7;
     padding: 20px;
     border-radius: 10px;
@@ -31,16 +31,17 @@ body {
     width: 1000px;
     text-align: left;
     padding-top: 50px;
-    margin-top: 50px; /* Odstęp od góry na dużych ekranach */
+    margin-top: 50px; /* Odstęp na dużych ekranach */
 }
 
 /* Styl dla telefonów (ekranów mniejszych niż 768px) */
 @media (max-width: 768px) {
     .box2 {
-        margin-top: 20px; /* Mniejszy odstęp na telefonach */
+        margin-top: 150px; /* DUŻY odstęp na telefonach, aby box nie zasłaniał góry */
         width: 90%; /* Dostosowanie szerokości */
     }
 }
+
 
     
     
