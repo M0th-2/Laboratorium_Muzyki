@@ -113,9 +113,9 @@ table, th, td {
             background-color: #f7afd9;
           }
     
-  }
-  .img2 {
-    display: block;  /* Sprawia, że obrazek jest elementem blokowym */
-    margin-left: auto;  /* Ustawia lewy margines na auto */
-    
+@media (max-width: 768px) { /* Dla ekranów mniejszych niż 768px (np. telefon) */
+    .box {
+        margin-top: 20px; /* Dodaje odstęp od góry na telefonach */
+        width: 90%; /* Sprawia, że box dostosuje szerokość do ekranu */
+    }
 }
