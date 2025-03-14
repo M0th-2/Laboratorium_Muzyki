@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LABORATORIUM MUZYKI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    
+    <div class="box1">
+      <a href="lmenu.html"> <img src="arrow.png" style="width: 20px; height: 20px; margin-right:100%;" class="powiekszany"> </a>  
+        <h1 style="text-align: center;">Interwały</h1>
+        
+        <br>
+
+<style>
+
+    </style>
+     <b>Skale muzyczne </b>
+     <p>to wybór dźwięków ułożonych według stałego schematu w obrębie oktawy, z określonym dźwiękiem centralnym. Podstawą Europejskiej muzyki są skale systemu tonalnego, skale siedmiostopniowe (w których ósmy dźwięk jest powtórzeniem pierwszego w odległości oktawy).
+        Są to: skala majorowa (durowa) oraz skala minorowa (molowa). </p>
+        <br>
+    <p>Skalę rozpoczynającą sie od określonego dźwięku nazywamy gamą. Jest to skala z określonym co do wysokości materiałem dźwiękowym. 
+        Wszystkie stopnie gamy mają swoje określone ,,funkcje", tak więc mamy: </p>
+        <br>
+            <table style="width:100%";>
+                <tr>
+                    <th>stopień </th>
+                    <th>funkcja </th>
+                
+                  </tr>
+                <tr>
+                    <td>I 
+
+                    </td>
+                    <td> tonika (T) - to punkt centralny gamy
+                        </td>
+
+                <tr>
+                    <td>II </td>
+                    <td>dźwięk prowadzący w dół </td>
+
+                </tr>
+                <tr>
+                    <td>III  </td>
+                    <td>medianta
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>IV 
+
+                    </td>
+                    <td>subdominanta (S) czyli dominanta dolna (sub = pod)
+
+                    </td>
+            
+                </tr>
+                <tr>
+                    <td>V  </td>
+                    <td>dominanta (D), z łaciny dominus = dominujący
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>VI 
+
+                    </td>
+                    <td> submedianta
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>VII 
+
+                    </td>
+                    <td>dźwięk prowadzącyw w górę (o silnym ciążeniu)
+
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        VIII
+                    </td>
+                    <td>
+                        = powtórzenie I
+                    </td>
+                </tr>
+            </table>
+</b>
+
+
+
+
+
+
+
+    <br>
+
+
+     <b>Tonacja</b>
+        <p>
+            całokształt stosunków między toniką, jak punktem centralnym, a poszczególnymi stopniami gamy. Kiedy materiałem dźwiękowym danego utworu jest określona gama, mówimy, że utwór jest utrzymany w tej tonacji. 
+        </p>
+<br>
+    <b>Diatonika </b>
+    <p>
+        to zasada posługiwania się wyłącznie  dźwiękami składowymi określonej gamy - dźwiękami gamowłaściwymi.
+Jeśli podwyższymy lub obniżymy dźwięk gamowłaściwy za pomocą znaku przynutowego, nazywamy takie zjawisko alteracją. 
+    </p>
+
+<br>
+    <b>Chromatyka</b>
+    <p>
+        to zasada takiego doboru dźwięków, aby w szeregu oprócz dźwięków gamowłaściwymi zastosować ich obniżenia lub podwyższenia za pomocą znaków przynutowych, aby postępowały po sobie półtonami.
+    </p>
+
+
+
+
+    
+</div>
+
+   
+</body>
