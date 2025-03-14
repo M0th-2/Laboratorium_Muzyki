@@ -307,9 +307,50 @@ table, th, td {
             background-color: #f7afd9;
           }
     
-  }
-  .img2 {
-    display: block;  /* Sprawia, że obrazek jest elementem blokowym */
-    margin-left: auto;  /* Ustawia lewy margines na auto */
-    
-}
+  .tooltip-container {
+            display: flex;
+            justify-content: center; /* Wyśrodkowanie poziome */
+            align-items: center; /* Wyśrodkowanie pionowe */
+            gap: 20px; /* Odstęp między tooltipami */
+        }
+        
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+        
+        .tooltip img {
+            width: 150px; /* Możesz dostosować rozmiar */
+            height: auto;
+            border-radius: 10px;
+        }
+        
+        .tooltip-text {
+            visibility: hidden;
+            background-color: #85145f;
+            color: white;
+            text-align: center;
+            padding: 8px;
+            border-radius: 5px;
+            position: absolute;
+            bottom: 110%;
+            left: 50%;
+            transform: translateX(-50%);
+            white-space: nowrap;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+        
+        /* Pokaż tooltip po najechaniu */
+        .tooltip:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+        }
+        
+        @media (max-width: 768px) {  /* Możesz dostosować wartość w zależności od potrzeby */
+            .tooltip-text {
+                visibility: hidden;
+                opacity: 0;
+            }
+        }
