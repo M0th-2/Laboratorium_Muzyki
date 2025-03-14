@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2c1981;
+    font-family: Univers , sans-serif; 
+}
+
+
+.box {
+        background: #ffdaf7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(11, 12, 92, 0.5); 
+    width: 500px;
+    text-align: center;
+    
+}
+.body1 {
+    display: flex;
+    justify-content: center; /* Nadal wyśrodkowuje box poziomo */
+    align-items: flex-start; /* Ustawia box na górze ekranu */
+    min-height: 100vh; /* Zapewnia, że strona nie będzie za krótka */
+    background-color: #2c1981;
+    font-family: Univers, sans-serif;
+}
+
+.box1 {
+    background: #ffdaf7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(11, 12, 92, 0.5);
+    width: 1000px;
+    text-align: left;
+    padding-top: 50px;
+    margin-top: 50px; /* Odstęp na dużych ekranach */
+}
+
+/* Styl dla telefonów (ekranów mniejszych niż 768px) */
+@media (max-width: 768px) {
+    .box2 {
+        margin-top: 150px; /* DUŻY odstęp na telefonach, aby box nie zasłaniał góry */
+        width: 90%; /* Dostosowanie szerokości */
+    }
+}
+
+h1 {font-size: 24px;}
+        h2 {font-size: 15px;}
+        h3 { font-size: 18px;}
+        p {font-size: 16px;}
+
+.button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    background: #d33fa2;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    
+}
+.button:hover {
+    background: #85145f;
+}
+.button1 {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    background: #d33fa2;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: left;
+    border-radius: 5px;
+    
+}
+.button1:hover {
+    background: #85145f;
+
+}
+@keyframes obrot {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.obracany {
+    width: 200px; 
+    transition: animation 0,2ms ease; 
+}
+
+.obracany:hover {
+    animation: obrot 5s linear infinite;
+}
+
+.obracany:not(:hover) {
+    animation: none;
+}
+
+.powiekszany {
+    width: 200px; 
+    transition: transform 0.3s ease; 
+}
+
+.powiekszany:hover {
+    transform: scale(1.1); 
+}
+
+.img1 {
+    margin-left: left;
+}
+table, th, td {
+    
+    text-align: center;
+    
+    tr:nth-child(even) {
+            background-color: #f7afd9;
+          }
+    
+  }
+  .img2 {
+    display: block;  /* Sprawia, że obrazek jest elementem blokowym */
+    margin-left: auto;  /* Ustawia lewy margines na auto */
+    
+}
