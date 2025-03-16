@@ -145,6 +145,7 @@ table, th, td {
     text-align: center;
     font-size: larger;
     border-radius: 5px;
+}
 .box2 {
     background: #02a2be;
     display: flex;
@@ -172,7 +173,7 @@ table, th, td {
 #intervalButtons {
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
-    gap: 10px; /
+    gap: 10px; 
     width: 100%; 
     margin: 20px 0;
 }
