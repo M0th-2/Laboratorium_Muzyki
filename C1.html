@@ -1,0 +1,124 @@
+
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LABORATORIUM MUZYKI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body1">
+ <div class="box1">
+    <a href="cmenu.html"> <img src="arrow.png" style="width: 20px; height: 20px; margin-right:100%;" class="powiekszany"> </a>  
+    <h1 style="text-align: center;">Słuchowe rozpoznawanie interwałów</h1>
+    <p style="text-align: center;">do oktawy, w górę</p>
+
+    <!-- Licznik wyników -->
+    <div class="box2">
+        <span style="font-size: 20px; margin-right: 20px;">Dobrze: <span id="correctCount">0</span></span>
+        <span style="font-size: 20px;">Źle: <span id="wrongCount">0</span></span>
+        
+
+    </div>
+   <!--random interval -->
+    <button class="button3" onclick="randomInterval()">Losuj Interwał</button>
+    
+    <!-- button replay-->
+    <button class="button3" onclick="repeatInterval()">Zagraj jeszcze raz</button>
+    
+    <!-- buttons wyboru interwału -->
+    <div id="intervalButtons" style="justify-content: last baseline;">
+        <button class="button2" onclick="checkAnswer('sekundamala')">Sekunda Mała</button>
+        <button class="button2" onclick="checkAnswer('sekundawielka')">Sekunda Wielka</button> 
+        <button class="button2" onclick="checkAnswer('tercjamala')">Tercja Mała</button>
+        <button class="button2" onclick="checkAnswer('tercjawielka')">Tercja Wielka</button> 
+        <button class="button2" onclick="checkAnswer('kwarta')">Kwarta</button>
+        <button class="button2" onclick="checkAnswer('tryton')">Tryton</button>
+        <button class="button2" onclick="checkAnswer('kwinta')">Kwinta</button>
+        <button class="button2" onclick="checkAnswer('sekstamala')">Seksta Mała</button>
+        <button class="button2" onclick="checkAnswer('sekstawielka')">Seksta Wielka</button>
+        <button class="button2" onclick="checkAnswer('septymamala')">Septyma Mała</button>
+        <button class="button2" onclick="checkAnswer('septymawielka')">Septyma Wielka</button>
+        <button class="button2" onclick="checkAnswer('oktawa')">Oktawa</button>
+     
+       
+   
+    
+
+    </div>
+    <!--Obrazek na dobre -->
+<img id="image1" src="correct.png" style="width: 50px; height: 50px; display: none;" onclick="randomInterval" alt="✅">
+<img id="image2" src="incorrect.png" style="width: 50px; height: 50px; display: none;" onclick="randomInterval" alt="❌">
+ 
+    
+    
+    <!-- Odtwarzacz audio -->
+    <audio id="audioPlayer" controls style="display: none;">
+        <source id="audioSource" type="audio/mp3">
+        Twoja przeglądarka nie obsługuje odtwarzania dźwięku.
+    </audio>
+    
+    <script>
+        var correctAnswer = ''; 
+        var correctCount = 0;
+        var wrongCount = 0;
+    
+        // Funkcja losująca interwał
+        function randomInterval() {
+            var random = Math.floor(Math.random() * 12);
+            var audioSource = document.getElementById('audioSource');
+            
+            var intervals = {
+                0: ['sekundamala', 'sekundamala.mp3'],
+                1: ['sekundawielka', 'sekundawielka.mp3'],
+                2: ['tercjamala', 'tercjamala.mp3'],
+                3: ['tercjawielka', 'tercjawielka.mp3'],
+                4: ['kwarta', 'kwarta.mp3'],
+                5: ['tryton', 'tryton.mp3'],
+                6: ['kwinta', 'kwinta.mp3'],
+                7: ['sekstamala', 'sekstamala.mp3'],
+                8: ['sekstawielka', 'sekstawielka.mp3'],
+                9: ['septymamala', 'septymamala.mp3'],
+                10: ['septymawielka', 'septymawielka.mp3'],
+                11: ['oktawa', 'oktawa.mp3'],
+
+            };
+            
+            correctAnswer = intervals[random][0];
+            audioSource.src = intervals[random][1];
+
+            document.getElementById('image1').style.display = 'none';
+            document.getElementById('image2').style.display = 'none';
+            
+            playAudio();
+        }
+        
+        // Odt audio
+        function playAudio() {
+            var audio = document.getElementById('audioPlayer');
+            audio.load();
+            audio.play();
+        }
+        
+        // Funkcja do powtórzenia ostatniego interwału
+        function repeatInterval() {
+            playAudio();
+        }
+        
+        // Funkcja sprawdzająca odpowiedź i aktualizująca licznik
+        function checkAnswer(answer) {
+            if (answer === correctAnswer) {
+                document.getElementById('image1').style.display = 'block';
+                correctCount++;
+                document.getElementById('correctCount').textContent = correctCount;
+            } else {
+                document.getElementById('image2').style.display = 'block';
+                wrongCount++;
+                document.getElementById('wrongCount').textContent = wrongCount;
+            }
+        }
+    </script>
+ </div>
+</body>
+</html>
