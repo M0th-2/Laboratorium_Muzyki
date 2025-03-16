@@ -107,6 +107,30 @@ h1 {font-size: 24px;}
 .button2:hover {
     background: #85145f;
 }
+#intervalButtons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 kolumny na dużych ekranach */
+    gap: 10px; /* Odstęp między przyciskami */
+    width: 100%; /* Szerokość kontenera */
+    margin: 20px 0;
+}
+
+.button2 {
+    width: 100%; /* Każdy przycisk zajmuje pełną szerokość swojej kolumny */
+    padding: 15px;
+    background: #d33fa2;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+}
+
+
+@media (max-width: 768px) {
+    #intervalButtons {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
 @keyframes obrot {
     from {
         transform: rotate(0deg);
