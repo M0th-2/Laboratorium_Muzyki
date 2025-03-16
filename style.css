@@ -129,3 +129,67 @@ table, th, td {
           }
     
         }
+
+
+
+
+/*v tutaj lecą już dodatki do ćwiczenia*/
+.button3 {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    background: #571091;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+    font-size: larger;
+    border-radius: 5px;
+.box2 {
+    background: #02a2be;
+    display: flex;
+    width: 20%;
+    padding: 15px;
+    margin: 10px auto;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 10px;
+    justify-content: center
+        }
+@media (max-width: 768px) {
+.box2 {
+    margin-top: 150px; 
+    width: 90%;
+      }
+        }
+}
+.button3:hover {
+    background: #290868;
+}
+
+
+/*buttons z interwałami:*/
+#intervalButtons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px; /
+    width: 100%; 
+    margin: 20px 0;
+}
+
+.button2 {
+    width: 100%; 
+    padding: 15px;
+    background: #d33fa2;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+}
+
+/* la ekranów mniejszych niż 768px */
+@media (max-width: 768px) {
+    #intervalButtons {
+        grid-template-columns: repeat(3, 1fr); /* 3 kolumny zamiast 4 */
+    }
+}
