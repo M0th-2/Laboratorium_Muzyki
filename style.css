@@ -24,9 +24,9 @@
 }
 .body1 {
     display: flex;
-    justify-content: center; /* Nadal wyśrodkowuje box poziomo */
-    align-items: flex-start; /* Ustawia box na górze ekranu */
-    min-height: 100vh; /* Zapewnia, że strona nie będzie za krótka */
+    justify-content: center; /
+    align-items: flex-start;
+    min-height: 100vh; 
     background-color: #2c1981;
     font-family: Univers, sans-serif;
 }
@@ -45,8 +45,8 @@
 /* Styl dla telefonów (ekranów mniejszych niż 768px) */
 @media (max-width: 768px) {
     .box1 {
-        margin-top: 150px; /* DUŻY odstęp na telefonach, aby box nie zasłaniał góry */
-        width: 90%; /* Dostosowanie szerokości */
+        margin-top: 150px; 
+        width: 90%;
     }
 }
 
@@ -102,6 +102,7 @@ h1 {font-size: 24px;}
     text-align: center;
     border-radius: 5px;
     border: none;
+    font: small;
 }
 .button2:hover {
     background: #85145f;
