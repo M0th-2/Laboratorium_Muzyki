@@ -94,7 +94,31 @@ h1 {font-size: 24px;}
         transform: rotate(360deg);
     }
 }
+}
+.button1.1 {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    background: #02a2be;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: left;
+    border-radius: 5px;
+    
+}
+.button1.1:hover {
+    background: #114d70;
 
+}
+@keyframes obrot {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
 .obracany {
     width: 200px; 
     transition: animation 0,2ms ease; 
