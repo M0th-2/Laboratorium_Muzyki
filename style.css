@@ -95,7 +95,7 @@ h1 {font-size: 24px;}
     }
 }
 }
-.button11 {
+.button4 {
     display: block;
     width: 100%;
     padding: 15px;
@@ -107,7 +107,7 @@ h1 {font-size: 24px;}
     border-radius: 5px;
     
 }
-.button11:hover {
+.button4:hover {
     background: #114d70;
 
 }
